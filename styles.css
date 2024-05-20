@@ -1,0 +1,268 @@
+.book-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #fff9f9;
+    line-height: 1.5;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #084549;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.671);
+}
+.book-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+}
+#modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#modal.show {
+    display: block;
+}
+.button {
+    cursor: pointer;
+}
+#title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #000000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#author  {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#pages  {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+#checkbox {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 56px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+}
+#addBtn {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: hsl(101, 83%, 41%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#close-modal {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: hsl(0, 88%, 38%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+#title:hover {
+    background: #42c70d93;
+    color: #fff;
+}
+#author:hover {
+    background: #bbc70d93;
+    color: #fff;
+}
+#pages:hover {
+    background: #0dc1c793;
+    color: #fff;
+}
+#checkbox:hover {
+    background: hsl(244, 40%, 50%);
+    color: #fff;
+}
+#checkbox:active {
+    background: hsl(244, 40%, 60%);
+    color: #fff;
+}
+#addBtn:hover {
+    background: hsl(101, 83%, 51%);
+}
+#addBtn:active {
+    background: hsl(101, 83%, 61%);
+}
+#close-modal:hover {
+    background: hsl(0, 88%, 48%);
+}
+#close-modal:active {
+    background: hsl(0, 88%, 58%);
+}
+#new-book-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: hsl(192, 100%, 50%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: center;
+    justify-content: center;
+}
+#new-book-button:hover {
+    background: hsl(192, 100%, 60%);
+}
+#new-book-button:active {
+    background: hsl(192, 100%, 70%);
+}
+#myH1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(172, 100%, 50%);
+    margin: 20px;
+    text-align: center;
+    font-size: 5rem;
+}
+.book-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+    background: hsl(184, 79%, 26%);
+}
+.toggle-read-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: hsl(96, 80%, 32%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.toggle-read-button:hover {
+    background: hsl(96, 80%, 42%);
+}
+.toggle-read-button:active {
+    background: hsl(96, 80%, 52%);
+}
+.remove-button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background: hsl(0, 75%, 40%);
+    color: #fff;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.remove-button:hover {
+    background: hsl(0, 75%, 50%);
+}
+.remove-button:active {
+    background: hsl(0, 75%, 60%);
+}
